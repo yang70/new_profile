@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+  // Start Sidebar
   $("#menu-toggle, #close").click(function(e) {
       e.preventDefault();
       
@@ -34,6 +35,16 @@ $(document).ready(function(){
 
       }
       event.preventDefault();
+  });
+  // End Sidebar
+
+  // Start Typed
+  $(function(){
+    $(".typed").typed({
+      strings: ["web developer.^1000", "technology enthusiast.^1000", "father.^1000", "husband.^1000", "career changer.^1000"],
+      typeSpeed: 0,
+      loop: true
+    });
   });
 
 });
