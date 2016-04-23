@@ -10,10 +10,11 @@
     <title>MY</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/simple-sidebar.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Courgette|Arimo|Francois+One' rel='stylesheet' type='text/css'>
+    <link href="css/sidebar-footer.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Courgette|Arimo|Francois+One|Lora|Source+Code+Pro' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+    <link href="css/custom.css" rel="stylesheet">
 
   </head>
 
@@ -47,9 +48,9 @@
         <div class="container"><a href="#menu-toggle" id="menu-toggle"><button id="hamburger" class="btn"><span class="glyphicon glyphicon-menu-hamburger"></span></button></a></div>
       </nav>
       <div class="header-container">
-        <video poster="https://s3.amazonaws.com/matthewgyang/images/poster.png" autoplay loop>
-          <source src="https://s3.amazonaws.com/matthewgyang/videos/header_background_2_opt.mp4" type="video/mp4">
-          <source src="https://s3.amazonaws.com/matthewgyang/videos/header_background_2_opt.webm" type="video/webm">
+        <video poster="https://s3.amazonaws.com/matthewgyang/images/poster.jpg" autoplay loop>
+          <!-- <source src="https://s3.amazonaws.com/matthewgyang/videos/header_background_2_opt.mp4" type="video/mp4"> -->
+          <!-- <source src="https://s3.amazonaws.com/matthewgyang/videos/header_background_2_opt.webm" type="video/webm"> -->
         </video>
         <div class="text text-center">
           <div id="title">
@@ -59,14 +60,95 @@
           </div>
         </div>
       </div>
-      <div id="about" class="section text-center">
-        <h1>About</h1>
+      <div id="about" class="section">
+        <div class="container about-content text-center">
+          <h1>About</h1>
+          <hr class="style1"/>
+          <div class="col-md-4">
+            <p><span class="large-letter">E</span>lit labore officia aut hic mollitia magni suscipit? Voluptates magnam itaque quidem totam voluptas sapiente. Magni incidunt possimus maiores commodi sunt. Quos eaque architecto laborum hic iste consectetur! Ducimus deserunt.</p>
+          </div>
+          <div class="col-md-4">
+            <img id="fam" src="https://s3.amazonaws.com/matthewgyang/images/fam.jpg" alt="family"/>
+          </div>
+          <div class="col-md-4">
+            <p>Consectetur nostrum sit recusandae impedit perferendis voluptatem! Repudiandae illo perferendis quidem deleniti minima sapiente vel. Magni provident aliquam a quo obcaecati. Suscipit dolores consequatur vero facere incidunt voluptas voluptatibus. Soluta.</p>
+          </div>
+        </div>
       </div>
-      <div id="blog" class="text-center">
-        <h1>Blog</h1>
+      <div id="blog" class="section">
+        <div class="container text-center">
+          <h1>Blog</h1>
+          <hr class="style2" />
+          <div id="blog-carousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <div class="image-container">
+                  <img src="http://fillmurray.com/200/200" alt="...">
+                </div>
+                <div class="carousel-caption">
+                  <h1>Blog Post 1</h1>
+                  <p>This is the sub-text</p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image-container">
+                  <img src="http://fillmurray.com/200/200" alt="...">
+                </div>
+                <div class="carousel-caption">
+                  <h1>Blog Post 2</h1>
+                  <p>This is the sub-text</p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image-container">
+                  <img src="http://fillmurray.com/200/200" alt="...">
+                </div>
+                <div class="carousel-caption">
+                  <h1>Blog Post 3</h1>
+                  <p>This is the sub-text</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#blog-carousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#blog-carousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
       </div>
-      <div id="contact" class="text-center">
-        <h1>Contact</h1>
+      <div id="contact" class="section">
+        <div class="container text-center">
+          <h1>Contact</h1>
+          <div class="col-md-4">
+            <a href="mailto:matt@matthewgyang.com">
+              <img src="https://s3.amazonaws.com/matthewgyang/images/mail.svg" alt="email"/>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://github.com/yang70" target="_blank">
+              <img src="https://s3.amazonaws.com/matthewgyang/images/github.svg" alt="email"/>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://linkedin.com/in/matthewgyang" target="_blank">
+              <img src="https://s3.amazonaws.com/matthewgyang/images/linkedin.svg" alt="email"/>
+            </a>
+          </div>
+        </div>
       </div>
 
       <footer class="footer-distributed">

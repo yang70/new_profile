@@ -46,5 +46,10 @@ $(document).ready(function(){
       loop: true
     });
   });
+  // End Typed
 
+  // Carousel
+  $('.carousel').carousel({
+    // interval: 2000
+  })
 });
