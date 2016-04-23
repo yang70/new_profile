@@ -247,3 +247,7 @@ hr.style2:after {
 .carousel-control.right, .carousel-control.left {
   background-image: none!important;
 }
+
+.image-container img {
+  margin: 0 auto;
+}
