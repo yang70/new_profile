@@ -104,17 +104,36 @@ h3 {
   }
 
   #contact {
-    height: 670px;
+    height: 450px;
+  }
+
+  #contact p {
+    margin-top: 30px;
+    margin-bottom: 0;
   }
 
   #contact div div {
-    margin-top: 50px;
+    margin-top: 20px;
+  }
+
+  .contact-icon {
+    width: 100px;
   }
 }
 
 @media screen and (min-width: 992px) {
   #contact div div {
-    margin-top: 100px;
+    margin-top: 15px;
+  }
+
+  .contact-icon {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  #about {
+    height: 995px;
   }
 }
 
@@ -126,25 +145,16 @@ h3 {
   padding-top: 20px;
   height: 700px;
   color: white;
-  background-color: #2d2d2d;
+  background-color: #2c343f;
 }
 
 #contact {
   background: url("https://s3.amazonaws.com/matthewgyang/images/contact-bg.jpg");
 }
 
-#contact div div img {
-  width: 150px;
-}
-
-#contact div div img:hover {
+.contact-icon:hover {
   transform: scale(1.1);
   transition: 0.2s;
-}
-
-#contact div div h3 {
-  font-family: "Source Code Pro";
-  margin-top: 10px;
 }
 
 .container-2 h2 {
@@ -156,13 +166,18 @@ h3 {
 }
 
 #fam {
-  width: 300px;
+  width: 275px;
   border-radius: 50%;
 }
 
 .about-content p {
   font-family: "Lora";
   font-size: 20px;
+  margin-bottom: 0;
+}
+
+.about-content a {
+  color: black;
 }
 
 .large-letter {
@@ -186,12 +201,17 @@ hr.style2:after {
 	position: relative;
 	top: -14px;
 	padding: 0 10px;
-	background: #2d2d2d;
+	background: #2c343f;
 	color: #8c8b8b;
 	font-size: 18px;
 	-webkit-transform: rotate(60deg);
 	-moz-transform: rotate(60deg);
 	transform: rotate(60deg);
+}
+
+hr.style3 {
+  border-top: 1px solid black;
+  width: 33%;
 }
 
 /* Typed styling */
@@ -234,7 +254,7 @@ hr.style2:after {
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 500px;
-  background-color: #2d2d2d;
+  background-color: #2c343f;
 }
 .carousel-inner > .item > img {
   position: absolute;

@@ -52,4 +52,15 @@ $(document).ready(function(){
   $('.carousel').carousel({
     // interval: 2000
   })
+
+  // Contact Icon Text
+  $(".contact-icon").mouseover(function() {
+    var text = $(this).attr("alt");
+    $("#contact-header").text(text);
+  });
+
+  $(".contact-icon").mouseleave(function() {
+    $("#contact-header").text("Get in touch!");
+  });
+
 });
